@@ -1,5 +1,14 @@
 const express = require('express');
+//agragamos body parse
+
 const app = express();
+
+//Pasar datos nuevos de mascotas para crear a bd mongo desde el form
+
+app.use(express.urlencoded({extended: true}));
+
+app.use(express.json()) // 
+
 
 require('dotenv').config()
 //const port = 3000;

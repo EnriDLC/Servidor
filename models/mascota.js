@@ -1,5 +1,6 @@
 //import mongoose from 'mongoose';
 const mongoose = require ('mongoose');
+const router = require('../router/RutasWeb');
 const Schema = mongoose.Schema;
 
 const mascotaSchema = new Schema({
@@ -25,3 +26,5 @@ module.exports = Mascota;
    //   favs:  Number
  // }
  // });
+
+ 
